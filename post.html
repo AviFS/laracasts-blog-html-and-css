@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laravel From Scratch Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Open Sans', sans-serif;">
+
+<section class="px-6 py-8">
+
+    <!-- Navbar -->
+    <nav class="md:flex md:justify-between md:items-center">
+
+        <!-- Logo -->
+        <div>
+            <a href="/">
+                <img src="./images/logo.svg" alt="Laracasts Logo" width="165" height="16">
+            </a>
+        </div>
+
+        <!-- Home & Subscribe -->
+        <div class="mt-8 md:mt-0">
+            <a href="/" class="text-xs font-bold uppercase">Home Page</a>
+
+            <a href="#" class="bg-blue-500 ml-3 px-5 py-3 text-xs rounded-full text-white font-semibold uppercase">Subscribe for Updates</a>
+        </div>
+    </nav>
+
+    <!-- Header Elements -->
+    <header class="max-w-xl mx-auto mt-20 text-center"></header>
+
+    <!-- Blog Post Grid -->
+    <main class="max-w-6xl mx-auto">
+        <div class="lg:grid lg:grid-cols-2">
+            <div class="">
+                <img src="./images/illustration-1.png" alt="Illustration" class="rounded-xl">
+                <h2 class="mt-2 text-gray-400 text-xs">Published <time>November 17, 2020</time></h2>
+                <div class="flex items-center mx-auto">
+                    <!-- Author's Avatar-->
+                    <img src="./images/lary-avatar.svg" alt="Lary's Avatar">
+
+                    <!-- Author's Name -->
+                    <div class="ml-3 text-sm">
+                        <h1 class="font-bold">Lary Laracore</h1>
+                        <h2>Mascot at Laracasts</h2>
+                    </div>
+                </div>
+            </div>
+            <div class=""></div>
+
+        </div>
+
+
+
+
+    </main>
+
+    <!-- Sign Up for Newsletter -->
+    <footer class="border border-black border-opacity-5 bg-gray-100 rounded-xl text-center py-16 px-10 mt-16">
+        <!-- Image & Headings -->
+        <img src="./images/lary-newsletter-icon.svg" alt="" class="mx-auto -mb-6">
+        <h5 class="text-3xl">Stay in touch with the latest posts</h5>
+        <p class="text-sm mt-2">Promise to keep the inbox clean. No bugs.</p>
+
+        <!-- Email Address Input -->
+        <div class="mt-10">
+            <div class="relative inline-block mx-auto lg:bg-gray-200 rounded-full">
+
+                <form method="POST" action="#" class="lg:flex text-sm">
+                    <div class="lg:py-3 lg:px-5 flex items-center">
+                        <label for="email" class="hidden lg:inline-block">
+                            <img src="./images/mailbox-icon.svg" alt="mailbox letter">
+                        </label>
+
+                        <input id="email" type="text" placeholder="Your email address" class="lg:bg-transparent py-2 lg:py-0 pl-4 focus-within:outline-none">
+                    </div>
+
+                    <button type="submit" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+
+</section>
+</body>
+</html>
